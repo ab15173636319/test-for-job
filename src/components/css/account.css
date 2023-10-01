@@ -1,0 +1,116 @@
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  padding: 24px;
+  margin-top: 20px;
+}
+
+.card-title {
+  padding: 6px 0 0 0;
+  font-weight: 700;
+  font-style: normal;
+  color: #001e40;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.input-wrapper {
+  /* position: relative; */
+  height: 40px;
+  width: 100%;
+  display: flex;
+  padding: 0 12px;
+  /* justify-content: center; */
+  align-items: center;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.select2-selection {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  height: 32px;
+}
+
+.select2-selection::placeholder {
+  color: gray;
+  font-size: 12px;
+}
+
+.submit {
+  margin-top: 10px;
+  background: #008bff;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 19px;
+  border-radius: 4px;
+}
+
+.sel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.el-input__wrapper {
+  height: 40px;
+}
+
+.sel input {
+  margin-left: 28px;
+  padding: 8px 19px;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: "";
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #ffffff;
+  background: #008bff;
+  border-color: #000000;
+  box-shadow: 0 8px 16px 0 rgba(94, 169, 219, 0.2);
+  border-style: none;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+
+.font-size14 {
+  font-size: 14px;
+}
+
+.el-input__wrapper {
+  height: 40px;
+}
+/* 
+.box {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  left: -250px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.125);
+} */

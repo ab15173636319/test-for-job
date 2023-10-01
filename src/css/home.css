@@ -1,0 +1,238 @@
+.logo {
+  width: 250px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.logo-font {
+  width: 186px;
+  height: 48px;
+  font-size: 26px;
+  color: #008bff;
+  font-weight: bold;
+}
+
+.menulist {
+  margin-top: 20px;
+  width: 100%;
+  height: calc(100vh - 72px);
+  border-right: 2px solid #008bff;
+}
+
+.menulist-item {
+  width: 100%;
+  cursor: pointer;
+  /* padding: 0; */
+  font-size: 14px;
+  /* height: 21px; */
+  display: flex;
+  color: #fff;
+  font-weight: normal;
+  align-items: center;
+  padding: 12px 32px;
+}
+
+.menulist-item span:first-child {
+  padding: 0 4px 0 0;
+}
+
+.menulist-item.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+.down-container {
+  position: relative;
+}
+
+nav {
+  background-color: #fff;
+  width: calc(100vw - 250px);
+}
+
+/* 大屏幕 */
+@media screen and (min-width: 960px) {
+  .nav-right-mobile-menu {
+    display: none;
+  }
+
+  .nav-contain {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .right-container {
+    /* background-color: #007bff; */
+    background: linear-gradient(to bottom right, #007bff, #008bff);
+    filter: blur(0px);
+    padding: 0;
+    margin: 0;
+    /* width: calc(100% - 250px); */
+  }
+
+  .test-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu {
+    width: 250px;
+    background: linear-gradient(to bottom right, #007bff, #008bff);
+    /* border: 2px solid #008bff; */
+    height: 100%;
+  }
+
+  .nav-right-mobile {
+    display: none;
+  }
+
+  .sel {
+    display: flex;
+  }
+
+  .nav-item-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #597393;
+    padding: 0 12px;
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .money {
+    border-radius: 2px;
+    font-weight: 400;
+    color: #008bff;
+    background-color: rgba(0, 139, 255, 0.2);
+  }
+
+  .nav-item {
+    cursor: pointer;
+    height: 72px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item-btn.active {
+    color: #007bff;
+  }
+
+  .nav-item-btn.active:hover {
+    color: #597393;
+  }
+
+  .margin {
+    height: 20px;
+    width: 100%;
+  }
+
+  .order {
+    height: calc(100vh - 100px);
+  }
+}
+
+/* 移动设备 */
+@media screen and (max-width: 960px) {
+  nav {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .nav-right-pc {
+    display: none;
+  }
+
+  .nav-right-mobile {
+    height: 72px;
+    padding: 0 16px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .nav-right-mobile-menu {
+    top: 72px;
+    height: 400px;
+    background-color: #fff;
+    width: 100%;
+    transform-origin: center top;
+    transform: scale(1, 0);
+    height: 0;
+    transition: all 0.5s;
+  }
+
+  .nav-right-mobile-menu.active {
+    transform: scale(1, 1);
+    height: auto;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile-logo {
+    font-size: 24px;
+    color: #008bff;
+    font-weight: bold;
+  }
+
+  .mobile-menu {
+  }
+
+  .down-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #007bff, #008bff);
+  }
+
+  .order {
+    /* margin-top: 20px; */
+    padding-top: 20px;
+  }
+
+  .mobile-money {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 100%;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    color: #008bff;
+    background: rgba(0, 139, 255, 0.2);
+    padding-left: 12px;
+    padding-right: 12px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: none;
+  }
+
+  .mobile-item-menu {
+    padding: 12px 0;
+  }
+
+  .mobile-item-menu > div {
+    padding: 6px 12px;
+    color: #597393;
+    font-size: 14px;
+  }
+}

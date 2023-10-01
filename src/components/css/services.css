@@ -1,0 +1,13 @@
+.des {
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 29px;
+  color: #008bff;
+  padding: 4px 16px;
+  background: rgba(0, 139, 255, 0.2);
+  font-size: 14px;
+  font-weight: bold;
+}

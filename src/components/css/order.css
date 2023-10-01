@@ -1,0 +1,111 @@
+.btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.top-btn {
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.top-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.top-btn.active {
+  color: #008bff;
+  background-color: #fff;
+}
+
+.table-place {
+  margin-top: 12px;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.search-group {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  border: #d6e5f1 solid 0.667px;
+  background-color: #f8fcff;
+}
+
+.search-group input {
+  padding: 0 12px;
+  height: 28px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.search-group button {
+  font-weight: 700;
+  font-style: normal;
+  font-size: "";
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #008bff;
+  background: rgba(0, 139, 255, 0.2);
+  border-color: #000000;
+  box-shadow: none;
+  border-style: none;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+
+.table {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.table table {
+  width: 100%;
+  padding: 0 16px 0 0;
+  margin-bottom: 0px;
+  background: #ffffff;
+  font-size: 12px;
+}
+
+tr,
+th,
+td {
+  border: none;
+}
+
+tbody tr {
+  height: 32px;
+  padding: 8px 16px;
+  width: 100%;
+  background-color: #f3f9fe;
+}
+
+@media screen and (min-width: 980) {
+}
+
+@media screen and (max-width: 980px) {
+  .btn-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-btn{
+    width: 100%;
+  }
+}
